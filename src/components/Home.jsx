@@ -6,7 +6,7 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 const Home = () => {
   const Img = 'https://cdn.create.vista.com/api/media/small/139022268/stock-photo-businessman-showing-ok-gesture';
   return (
-    <main className='w-screen h-screen p-4 bg-red-500'>
+    <main className='w-screen h-screen p-4'>
       <div className='absolute inset-0'>
         <img src={bgImg} alt="" className='w-full h-full object-cover' />
       </div>
@@ -37,38 +37,38 @@ const Home = () => {
             <h2 className='mb-3'>Projects</h2>
             <ul className='flex flex-col gap-2'>
               <li className='px-2 py-1 bg-slate-500 bg-opacity-20 rounded-2xl'>
-                <p className='flex justify-between items-center'><span className='text-sm'>Hermetica</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1' /></a></p>
-                <p className=' text-xs my-1'>React, Tailwind, Framer Motion</p>
+                <p className='flex justify-between items-center'><span className='text-sm'>Hermetica</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1 text-sm' /></a></p>
+                <p className=' text-xs'>React, Tailwind, Framer Motion</p>
             </li>
                <li className='px-2 py-1 bg-slate-500 bg-opacity-20 rounded-2xl'>
-                <p className='flex justify-between items-center'><span className='text-sm'>Netflix Clone</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1' /></a></p>
-                <p className=' text-xs my-1'>React, Tailwind, Firebase</p>
+                <p className='flex justify-between items-center'><span className='text-sm'>Netflix Clone</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1 text-sm' /></a></p>
+                <p className=' text-xs'>React, Tailwind, Firebase</p>
               </li>
                <li className='px-2 py-1 bg-slate-500 bg-opacity-20 rounded-2xl'>
-                <p className='flex justify-between items-center'><span className='text-sm'>Nike Clone</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1' /></a></p>
-                <p className=' text-xs my-1'>React, Tailwind</p>
+                <p className='flex justify-between items-center'><span className='text-sm'>Nike Clone</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1 text-sm' /></a></p>
+                <p className=' text-xs'>React, Tailwind</p>
               </li>
               <li className='px-2 py-1 bg-slate-500 bg-opacity-20 rounded-2xl'>
-                <p className='flex justify-between items-center'><span className='text-sm'>E-commerce</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1' /></a></p>
-                <p className=' text-xs my-1'>Redux, Firebase</p>
+                <p className='flex justify-between items-center'><span className='text-sm'>E-commerce</span> <a href="" className='py-1 px-3 bg-blue-500 rounded-xl'><FaExternalLinkAlt className='my-1 text-sm' /></a></p>
+                <p className=' text-xs'>Redux, Firebase</p>
               </li>
             </ul>
           </div>
           <div className='flex flex-col gap-4 justify-center items-center w-[30vw]'>
             <div>
-              <div className='w-16 h-16 p-2 bg-indigo-700 rounded-3xl'>
+              <div className='w-14 h-14 p-2 bg-indigo-700 rounded-3xl'>
                 <FaDiscord className='w-full h-full object-cover' />
               </div>
               <p className='text-center text-sm mt-1'>Discord</p>
             </div>
              <div>
-              <div className='w-16 h-16 p-3 bg-blue-500 rounded-3xl'>
+              <div className='w-14 h-14 p-3 bg-blue-500 rounded-3xl'>
                 <FaLinkedinIn className='w-full h-full object-cover' />
               </div>
               <p className='text-center'>LinkedIn</p>
             </div>
              <div>
-              <div className='w-16 h-16 p-2 bg-black rounded-3xl'>
+              <div className='w-14 h-14 p-2 bg-black rounded-3xl'>
                 <FaGithub className='w-full h-full object-cover bg-black' />
               </div>
               <p className='text-center text-sm mt-1'>GitHub</p>
@@ -77,14 +77,14 @@ const Home = () => {
         </div>
 
         <div className='flex justify-between items-center'>
-          <div>
+          <div className='flex flex-col w-[25vw] justify-center items-center'>
               <div className='w-20 h-20 p-3 bg-indigo-600 rounded-3xl'>
                 <IoDocumentTextSharp className="w-full h-full object-cover" />
                 {/* <img src={Img} alt="" className='w-full h-full object-cover rounded-3xl' /> */}
               </div>
               <p className='text-center'>Resume</p>
             </div>
-          <div className='w-[65vw]'>
+          <div className='w-[60vw]'>
             <img src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=akhil683&langs_count=8&layout=compact&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" alt="" className='h-full w-full' />
           </div>
         </div>
@@ -92,11 +92,10 @@ const Home = () => {
         <div className='w-full flex flex-col justify-center items-center mt-4'>
           <p className=' animate-ping text-2xl'>^</p>
           <p className=' animate-ping text-xl -translate-y-12'>^</p>
-          <p className=' -translate-y-2'>Swipe Up</p>
         </div>
       </div> 
     </main>
   )
 }
 
-export default Home
+export default Home;
