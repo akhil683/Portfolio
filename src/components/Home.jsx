@@ -6,6 +6,7 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 const Home = () => {
   const Img = 'https://cdn.create.vista.com/api/media/small/139022268/stock-photo-businessman-showing-ok-gesture';
   return (
+    <>
     <main className='w-screen h-screen p-4'>
       <div className='absolute inset-0'>
         <img src={bgImg} alt="" className='w-full h-full object-cover' />
@@ -65,7 +66,7 @@ const Home = () => {
               <div className='w-14 h-14 p-3 bg-blue-500 rounded-3xl'>
                 <FaLinkedinIn className='w-full h-full object-cover' />
               </div>
-              <p className='text-center'>LinkedIn</p>
+              <p className='text-center text-sm mt-1'>LinkedIn</p>
             </div>
              <div>
               <div className='w-14 h-14 p-2 bg-black rounded-3xl'>
@@ -95,6 +96,8 @@ const Home = () => {
         </div>
       </div> 
     </main>
+    <div className='h-[110px]'></div>
+    </>
   )
 }
 
